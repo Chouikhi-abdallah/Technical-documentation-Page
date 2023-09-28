@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABEpJREFUWEfFlm1oW2UUx895bprXm67tiJUpGyKIKFi7tKlpmzZV/CBMB/UFnC8gVkvBTouW2a6D6GynTu2HMmWIb7BNcIxh9ZOTmZmXtjbdZKio+GFOmFinbXrz0mS595HnZjdNcnOTm1loyP2S+5xzfuf//M8hCBv8wQ2uD+sKQL/xmrHHv1pNU+sKwAqnjt/9q+nh07fohVh3AOEzj8MoGRaNjbQGe/yZSiBlAVKHvbea+v0/V0pS/D51pGcJEOqMSB24y3+5XHxFBeJTngnbYGC0Ggh6xHtjWoQ/mMPSkG60Pxle1IovAKA+ryFqytjrRoJLSgB9x21Jkpqj1he+7a0GYvVDL2UAiADGlGDE/oUrpeJVCkQn7mrjKFfL7w2dUgISBzueQwPZbRkK6DbX6vvd0wBwvzxnCGB++kxJtUv+mBjvPIQIJstosG8NwnMRgTZahoMmPUqkD3nvlIh0TpaAfQlETM+caS2O1fRA4tWOC4BQY90XuiEHcaBTljVNoSH/mrSAklNduWtgcSJHt9j6A3/mny9rwpivQ2LwQkzgr3/rfHxlwrXZIBkvy7JS6SHrWPhEOTWSkx4ZQFEBkGYsg4Ea3QAUABNj7RJLQAAfs+wPHou/0j6AgO+yxBTha9u+0L2aChxUALI+YM8qcPX1Q/5lJabiGAojHgcBcTFbEH/ix0O3x8bcc0iICwjLSdNWX7ikLxJXr0xRgdkBCA1YXgx26QZgB5PD7m4J0a90kaK4zcTRHwGBV5JTLtPE++bO56uR2J/1TPFjfTmYa7yiAkrC2EvuYaDwZi4ZgdMI2A0InPIbpfApfyC8i8Vc8jmtm8AclwvkILITYR27BgCWJ/a8+xgQeLRUVyjPGitG09bXZ8zxUfc4Io4UmFC+MoC0CXNTpFsBRYn4YFuQInYUulst8xqQ+h0YsNXmC0UUcfTslYIzKwNt3yPBJmXVFktcXiFmRMlpm5g9e80ALFB41hUBgs5iJWSnF915MZAtA1acnEnKAH8/0LzFMX3uUtUyAMBKn+sLRNyh7ljxQ3YHFQPxkzOFUxDtbbkicvTmhuMLF6sFWX6qdYBDtpjWilYC4qdmCwHYxlvZ2SIBQlpEcDacjPxQDYjwRPt1lGT+Ugpnu9YCQuDfmyVsrxV4QLiv2SFyZHFNMvwKKeyunY78ogUTfaT1ceDgA0QwlpsKFRCBmP3wnF1lwn93OLcSEX7PlzAPSLXRyhtQWwWWU5Koa9PH8/OqPUC9t/FRo1nQ6mgdgcTaT74zaC6ipXu2X0AC2woNdfV4nrP/D1Dt0Xk5XPPzT3ezm3AYVi8cZbR0AhH6m4j0IwNwN1GEPqWpDMJWXat4qWt7LxB6Iv9aCue7NBBFerL+y7OqP7PRB1teA4C9IqF36AJQJGLjutzZNEQJ+pCgvRQQIogZins2n1p4u5y6yzude+o+X3ijKoBqdoPesxsO8B9JqkNqPVietgAAAABJRU5ErkJggg=="), pointer;
+  }
+  
+  
+  #navbar-container {
+   background-image: radial-gradient( circle 975px at 2.6% 48.3%,  rgba(0,8,120,1) 0%, rgba(95,184,224,1) 99.7% );
+  
+    color: white;
+    width: 250px; 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto; 
+     transition: width 0.3s;
+     
+     box-shadow: rgba(0,8,120, 0.4) 5px 5px, rgba(0,8,120, 0.3) 10px 10px, rgba(0,8,120, 0.2) 15px 15px, rgba(0,8,120, 0.1) 20px 20px, rgba(0,8,120, 0.05) 25px 25px;
+  }
+  
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  
+  .nav-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    transition: background-color 0.3s;
+    text-align:center;
+    border-left: 5px solid rgb(2, 99, 135);
+    border-bottom:5px solid rgb(2, 99, 135);
+  }
+  
+  .nav-link:hover {
+    background-color: #34495e; 
+  }
+  .nav-link.active {
+    background-color: #34495e; 
+  }
+  
+  
+  #main-doc {
+    margin-left: 250px;  
+    padding: 2rem;
+    padding-left: 4rem; 
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: auto;
+  }
+  
+  .main-section {
+    margin-bottom: 2rem;
+  }
+  
+  .main-section header {
+    background-image: linear-gradient( 86.3deg,  rgba(0,119,182,1) 3.6%, rgba(8,24,68,1) 87.6% );  
+    color: white;
+    padding: 1rem;
+  }
+  
+  .main-section span {
+    font-size: 1.4rem;
+  }
+  
+  
+  code {
+    display: block;
+    background-color:#ecf0f1; 
+    border-radius: 4px;
+    font-family: 'Courier New', monospace; 
+  margin-top:5px;
+  margin-bottom:5px;
+  padding-left:5px;
+  padding-top:5px;
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+  }
+  
+  p{
+    padding-left:7px;
+    padding-top:7px;
+  }
+  li{
+    list-style:none;
+  }
+  #navbar header h1{
+    padding-bottom:15px;
+  }
+  
+  #navbar .header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  #navbar h1 {
+    font-size: 1.2rem; /* Adjust the font size */
+    
+    background-color: red;
+    
+    /* Create the gradient. */
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: normal;
+    
+    text-align: center;
+    margin-bottom: 0;
+    margin-bottom: -0.25em;
+  }
+  
+  
+  #navbar .swift-icon {
+    width: 20px; /* Adjust the size of the icon */
+    height: auto;
+    margin-left: 10px; /* Add spacing between the text and icon */
+  }
+  
+  
+  footer {
+    background-image: linear-gradient( 86.3deg,  rgba(0,119,182,1) 3.6%, rgba(8,24,68,1) 87.6% );
+    color: white;
+    text-align: center;
+    padding: 1rem 0 ;
+  }
+  @media screen and (max-width: 768px) {
+    #navbar {
+      width: 100%;
+      position: static;
+    }
+  
+    #main-doc {
+      margin-left: 0;
+    }
+  }
+  

@@ -1,0 +1,351 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Swift Technical Documentation Page</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width , initial-scale=1"/>
+<link rel="stylesheet" href="styles.css"/> 
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div id="navbar-container">
+      <nav id="navbar" aria-label="Documentation Navigation">
+        <header>
+  <div class="header-container">
+    <h1>Swift Documentation</h1>
+    <img class="swift-icon" src="https://www.svgrepo.com/show/306819/swift.svg" alt="Swift Icon"/>
+  </div>
+</header>
+        <ul>
+        <li>
+          <a class="nav-link" href="#Introduction">Introduction</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Basic_Syntax">Basic Syntax</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Control_Flow">Control Flow</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Functions">Functions</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Optionals">Optionals</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Classes_and_Structures">Classes and Structures</a>
+        </li><li>
+          <a class="nav-link" href="#Inhertitance_and_Protocols">Inhertitance and Protocols</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Error_Handling">Error Handling</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Closures">Closures</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Collections">Collections</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Strings_and_Characters">Strings and characters</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Option_Sets">Option Sets</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Enumerations">Enumerations</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Memory_Management">Memory Management</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Extensions">Extensions</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Generics">Generics</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Swift_Package_Manager">Swift Package Manager</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Swift_Documentation">Swift Documentation</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Conclusion">Conclusion</a>
+        </li>
+        
+        </ul>
+      </nav>
+      </div>
+    
+  <main id="main-doc">
+    <div id="main-section-container">
+    <section class="main-section" id="Introduction">
+      <header><span>Introduction</span></header>
+      <p>Welcome to the Swift Technical Documentation! Swift is a modern, powerful, and expressive programming language developed by Apple. It is designed to provide a seamless experience for building various types of applications, from mobile apps to server-side solutions.
+
+Swift's syntax is easy to read and write, making it an excellent choice for both beginners and experienced developers. With its safety features, memory management, and performance optimization, Swift empowers developers to create reliable and efficient software.
+
+In this documentation, you'll learn about the essential concepts, syntax, and best practices of Swift programming. Let's dive into the world of Swift!</p>
+    </section>
+    <section class="main-section" id="Basic_Syntax">
+      <header><span>Basic Syntax</span></header>
+      <p>The Basic Syntax section covers the fundamental building blocks of Swift. Variables, constants, data types, and operators are the cornerstone of any Swift program. Understanding these concepts is essential for writing clear and effective code.
+
+Variables and constants allow you to store and manage data. For example, you can declare a variable like this:</p>
+      <code>var age = 25
+</code>
+<p>We can perform basic arithmetic operations using operators:</p>
+<code>let sum = 10 + 5<br>
+let product = 3 * 7
+</code>
+    </section>
+    <section class="main-section" id="Control_Flow">
+      <header id="Control_Flow"><span>Control Flow</span></header>
+      <p>The Control Flow section introduces the concept of decision-making and repetition in Swift programs. Conditional statements and loops allow you to control the flow of execution based on certain conditions.
+
+For example, you can use an if statement to perform a specific action based on a condition:</p>
+      <code>let num = 7<br>
+if num % 2 == 0 {<br>
+    print("The number is even.")
+} <br>else {
+    print("The number is odd.")
+}
+</code>
+<p>Loops, such as for and while loops, enable you to repeat code blocks multiple times:</p>
+<code>for i in 1...5 {<br>
+    print("Count: \(i)")<br>
+}
+</code>
+    </section>
+    <section class="main-section" id="Functions">
+      <header><span>Functions</span></header>
+    <p>Functions are essential building blocks in Swift that allow you to encapsulate and reuse code. They help in organizing your codebase and promoting modularity.
+
+To define a function, you can use the following syntax:</p>
+    <code>func greet(name: String) {<br>
+    print("Hello, \(name)!")<br>
+}
+</code>
+<p>You can call a function by providing arguments:</p>
+<code>greet(name: "Alice")
+</code>
+    </section>
+    <section class="main-section" id="Optionals">
+      <header><span>Optionals</span></header>
+    <p>Swift's optionals provide a way to represent values that may be absent. They help in handling uncertainty and ensuring safety in your code.
+
+For example, consider the following optional variable:</p>
+    <code>var optionalName: String? = "Bob"
+</code>
+<p>You can use optional binding to safely unwrap and use the value:</p>
+<code>if let name = optionalName {<br>
+    print("Hello, \(name)!")<br>
+} else {<br>
+    print("No name provided.")<br>
+}
+</code>
+    </section>
+    <section class="main-section" id="Classes_and_Structures">
+      <header><span>Classes and Structures</span></header>
+      <p>Classes and structures are the building blocks of object-oriented programming in Swift. They enable you to define custom data types with properties and methods.
+
+For instance, here's how you can define a simple class and structure:</p>
+      <code>class Person {<br>
+    var name: String<br>
+    init(name: String) {<br>
+        self.name = name<br>
+    }<br>
+}<br>
+
+struct Point {<br>
+    var x: Int<br>
+    var y: Int<br>
+}
+</code>
+    </section>
+    <section class="main-section" id="Inhertitance_and_Protocols">
+      <header><span>Inhertitance and Protocols</span></header>
+      <p>Inheritance and protocols are fundamental concepts in Swift that allow you to create hierarchical relationships between types and define shared behavior.
+
+Consider a base class and a subclass that inherits from it:</p>
+      <code>class Vehicle {<br>
+    var wheels: Int<br>
+    init(wheels: Int) {<br>
+        self.wheels = wheels<br>
+    }<br>
+}<br>
+
+class Car: Vehicle {<br>
+    var brand: String<br>
+    init(brand: String) {<br>
+        self.brand = brand<br>
+        super.init(wheels: 4)<br>
+    }<br>
+}<br>
+<br>
+protocol Shape {<br>
+    func area() -> Double<br>
+}
+</code>
+    </section>
+    <section class="main-section" id="Error_Handling">
+      <header><span>Error Handling</span></header>
+    <p>Error handling in Swift lets you gracefully manage unexpected situations that might arise during execution. It ensures that your program continues to run smoothly even in the presence of errors.
+
+For instance, you can define a custom error type:</p>
+    <code>enum MathError: Error {
+    case divisionByZero
+}
+</code>
+<p>And handle errors in your code:</p>
+<code>func divide(_ a: Int, by b: Int) throws -> Int {<br>
+    guard b != 0 else {<br>
+        throw MathError.divisionByZero<br>
+    }<br>
+    return a / b<br>
+}
+</code>
+    </section>
+    
+    <section class="main-section" id="Closures">
+      <header><span>Closures</span></header>
+      <p>Closures are self-contained blocks of code that can be passed around and used in Swift. They provide a flexible and concise way to define functionality within your code.
+
+Here's an example of using a closure:</p>
+      <code>let multiply: (Int, Int) -> Int = { a, b in
+    return a * b
+}<br>
+<br>
+let result = multiply(3, 4)
+</code>
+    </section>
+    <section class="main-section" id="Collections">
+      <header><span>Collections</span></header>
+      <p>Collections in Swift allow you to store and manage groups of values. Arrays, dictionaries, and sets are essential collection types that you'll frequently use in your Swift programs.
+
+For example, you can create an array of colors:</p>
+      <code>var colors = ["Red", "Green", "Blue"]
+</code>
+<p>Or a dictionary to store scores of players:</p>
+<code>var playerScores = ["Alice": 95, "Bob": 80, "Charlie": 70]
+</code>
+<p>And you can use a set to store unique values:</p>
+<code>var uniqueNumbers: Set<Int> = [1, 2, 3, 4, 5]
+</code>
+    </section>
+    <section class="main-section" id="Strings_and_Characters">
+      <header><span>Strings and Characters</span></header>
+      <p>Strings are a fundamental part of any programming language. Swift provides a powerful and flexible way to work with strings and individual characters.
+
+You can create a string and perform string manipulation like this:</p>
+      <code>
+  let message = "Hello, Swift!"<br>
+  let name = "Alice"<br>
+  let combined = message + " My name is " + name
+</code>
+    </section>
+    <section class="main-section" id="Option_Sets">
+      <header><span>Option Sets</span></header>
+      <p>Option sets are a Swift-specific feature that lets you represent a set of related options or values. They are particularly useful when you have multiple independent flags or options.
+
+Here's an example of defining and using an option set:</p>
+      <code>struct Permissions: OptionSet {<br>
+    let rawValue: Int<br>
+    
+    static let read = Permissions(rawValue: 1 << 0)<br>
+    static let write = Permissions(rawValue: 1 << 1)<br>
+    static let execute = Permissions(rawValue: 1 << 2)<br>
+}<br>
+<br>
+var userPermissions: Permissions = [.read, .write]
+</code>
+    </section>
+    <section class="main-section" id="Enumerations">
+      <header><span>Enumerations</span></header>
+      <p>Enumerations (enums) allow you to define a group of related values. Enums provide clarity and safety when working with sets of possible values.
+
+Here's how you can define and use an enumeration:</p>
+      <code>enum Direction {<br>
+    case north, south, east, west<br>
+}<br>
+<br>
+var currentDirection = Direction.north<br>
+</code>
+    </section>
+    <section class="main-section" id="Memory_Management">
+      <header><span>Memory Management</span></header>
+      <p>Swift's memory management system helps manage the allocation and deallocation of memory. Automatic Reference Counting (ARC) tracks and manages memory usage in your Swift programs.
+
+In Swift, you don't need to manually allocate or deallocate memory. ARC takes care of it for you.
+
+</p>
+      
+    </section>
+    <section class="main-section" id="Extensions">
+      <header><span>Extensions</span></header>
+      <p>Extensions in Swift allow you to add new functionality to existing types, even if you don't have access to the original source code. They are a powerful way to extend built-in types or classes from external libraries.
+
+Here's an example of extending the String type:</p>
+      <code>extension String {<br>
+    func reversed() -> String {<br>
+        return String(self.reversed())<br>
+    }<br>
+}<br>
+<br>
+let original = "Swift is fun!"<br>
+let reversed = original.reversed()  // Outputs: "!nuf si tfiwS"<br>
+</code>
+    </section>
+    
+    <section class="main-section" id="Generics">
+      <header><span>Generics</span></header>
+      <p>Generics enable you to write flexible and reusable code by allowing you to write functions, types, and structures that can work with any data type.
+
+Here's an example of using generics to create a generic function:</p>
+      <code>func swap<T>(_ a: inout T, _ b: inout T) {<br>
+    let temp = a<br>
+    a = b<br>
+    b = temp<br>
+}<br>
+<br>
+var num1 = 5<br>
+var num2 = 10<br>
+swap(&num1, &num2)  // num1 is now 10, num2 is now 5
+</code>
+    </section>
+    <section class="main-section" id="Swift_Package_Manager">
+      <header><span>Swift Package Manager</span></header>
+      <p>Swift Package Manager (SPM) is a tool developed by Apple to manage the distribution of Swift code. It simplifies the process of creating, managing, and sharing Swift packages.
+
+Using SPM, you can easily include third-party libraries and frameworks into your projects.</p>
+    </section>
+    <section class="main-section" id="Swift_Documentation">
+      <header><span>Swift Documentation</span></header>
+      <p>Swift itself comes with comprehensive documentation that you can refer to for detailed information about the language, standard library, and various frameworks. The official Swift documentation is a valuable resource that provides in-depth explanations, code examples, and best practices.
+
+You can access the Swift documentation at <a href="https://swift.org/">Swift.org.</a></p>
+    </section>
+    <section class="main-section" id="Conclusion">
+      <header><span>Conclusion</span></header>
+      <p>Congratulations on completing the journey through the Swift Technical Documentation! You've learned about the core concepts of Swift programming, from its introduction and basic syntax to more advanced topics like error handling, closures, collections, and more.
+
+Swift's elegance, safety features, and performance optimizations make it a great choice for building a wide range of applications, from mobile apps to server-side solutions. As you continue to explore and apply what you've learned, you'll become more proficient in writing efficient and reliable Swift code.
+
+Feel free to refer back to this documentation whenever you need a refresher on Swift concepts, syntax, and best practices. Happy coding!
+
+Resources:</p>
+<ul> 
+<li><a href="https://swift.org/documentation/">Official Swift Documentation</a></li><li></li>
+<li><a href="https://www.apple.com/swift/playgrounds/">Swift Playgrounds:</a> Interactive coding environments for learning and experimenting with Swift.</li>
+<li><a href="https://swiftpack.co/">Swift Package Index:</a> A collection of Swift packages created by the community.</li><li></li>
+</ul>      
+    </section>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Swift Documentation Made By Chouikhi_Abdallah</p>
+  </footer>
+</body>
+</html>
